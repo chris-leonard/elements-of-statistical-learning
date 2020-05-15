@@ -2,3 +2,6 @@
 jupyter
 pandas
 matplotlib
+
+# Linting
+flake8

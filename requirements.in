@@ -5,3 +5,6 @@ matplotlib
 
 # Linting
 flake8
+
+# To download jupyter notebooks as pdf
+notebook-as-pdf

@@ -110,5 +110,5 @@ def add_bias(X):
     return X
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     pass

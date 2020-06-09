@@ -2,6 +2,10 @@
 jupyter
 pandas
 matplotlib
+scipy
 
 # Linting
 flake8
+
+# To download jupyter notebooks as pdf
+notebook-as-pdf

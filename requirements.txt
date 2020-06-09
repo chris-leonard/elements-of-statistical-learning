@@ -4,6 +4,7 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
+appdirs==1.4.4            # via pyppeteer
 appnope==0.1.0            # via ipykernel, ipython
 attrs==19.3.0             # via jsonschema
 backcall==0.1.0           # via ipython
@@ -30,10 +31,11 @@ markupsafe==1.1.1         # via jinja2
 matplotlib==3.2.1         # via -r requirements.in
 mccabe==0.6.1             # via flake8
 mistune==0.8.4            # via nbconvert
-nbconvert==5.6.1          # via jupyter, notebook
+nbconvert==5.6.1          # via jupyter, notebook, notebook-as-pdf
 nbformat==5.0.4           # via ipywidgets, nbconvert, notebook
+notebook-as-pdf==0.2.0    # via -r requirements.in
 notebook==6.0.3           # via jupyter, widgetsnbextension
-numpy==1.18.2             # via matplotlib, pandas
+numpy==1.18.2             # via matplotlib, pandas, scipy
 pandas==1.0.3             # via -r requirements.in
 pandocfilters==1.4.2      # via nbconvert
 parso==0.6.2              # via jedi
@@ -43,23 +45,30 @@ prometheus-client==0.7.1  # via notebook
 prompt-toolkit==3.0.5     # via ipython, jupyter-console
 ptyprocess==0.6.0         # via pexpect, terminado
 pycodestyle==2.6.0        # via flake8
+pyee==7.0.2               # via pyppeteer
 pyflakes==2.2.0           # via flake8
 pygments==2.6.1           # via ipython, jupyter-console, nbconvert, qtconsole
 pyparsing==2.4.6          # via matplotlib
+pypdf2==1.26.0            # via notebook-as-pdf
+pyppeteer==0.2.2          # via notebook-as-pdf
 pyrsistent==0.16.0        # via jsonschema
 python-dateutil==2.8.1    # via jupyter-client, matplotlib, pandas
 pytz==2019.3              # via pandas
 pyzmq==19.0.0             # via jupyter-client, notebook, qtconsole
 qtconsole==4.7.2          # via jupyter
 qtpy==1.9.0               # via qtconsole
+scipy==1.4.1              # via -r requirements.in
 send2trash==1.5.0         # via notebook
 six==1.14.0               # via bleach, cycler, jsonschema, python-dateutil, traitlets
 terminado==0.8.3          # via notebook
 testpath==0.4.4           # via nbconvert
 tornado==6.0.4            # via ipykernel, jupyter-client, notebook, terminado
+tqdm==4.46.0              # via pyppeteer
 traitlets==4.3.3          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbconvert, nbformat, notebook, qtconsole
+urllib3==1.25.9           # via pyppeteer
 wcwidth==0.1.9            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
+websockets==8.1           # via pyppeteer
 widgetsnbextension==3.5.1  # via ipywidgets
 zipp==3.1.0               # via importlib-metadata
 

@@ -2,6 +2,7 @@
 jupyter
 pandas
 matplotlib
+scipy
 
 # Linting
 flake8

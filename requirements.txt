@@ -35,7 +35,7 @@ nbconvert==5.6.1          # via jupyter, notebook, notebook-as-pdf
 nbformat==5.0.4           # via ipywidgets, nbconvert, notebook
 notebook-as-pdf==0.2.0    # via -r requirements.in
 notebook==6.0.3           # via jupyter, widgetsnbextension
-numpy==1.18.2             # via matplotlib, pandas
+numpy==1.18.2             # via matplotlib, pandas, scipy
 pandas==1.0.3             # via -r requirements.in
 pandocfilters==1.4.2      # via nbconvert
 parso==0.6.2              # via jedi
@@ -57,6 +57,7 @@ pytz==2019.3              # via pandas
 pyzmq==19.0.0             # via jupyter-client, notebook, qtconsole
 qtconsole==4.7.2          # via jupyter
 qtpy==1.9.0               # via qtconsole
+scipy==1.4.1              # via -r requirements.in
 send2trash==1.5.0         # via notebook
 six==1.14.0               # via bleach, cycler, jsonschema, python-dateutil, traitlets
 terminado==0.8.3          # via notebook

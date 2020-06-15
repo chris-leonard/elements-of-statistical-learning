@@ -3,6 +3,7 @@ jupyter
 pandas
 matplotlib
 scipy
+sklearn
 
 # Linting
 flake8

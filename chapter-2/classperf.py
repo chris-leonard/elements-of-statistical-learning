@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import numpy as np
-from numpy import linalg
 
 
 def classification_error(X, y, model, *model_args):
@@ -59,12 +58,12 @@ def apply_linear_model(X, beta):
 
     Inputs
     ------
-    X: 1 or 2-dimensional Numpy array inputs (without bias column). Dimension (p, N) or (N, )
-    beta: Numpy array of model coefficients. Dimension (N+1, )
+    X: 1 or 2-dimensional Numpy array inputs (without bias column). Dimension (N, p) or (N, )
+    beta: Numpy array of model coefficients. Dimension (p+1, )
 
     Output
     ------
-    yhat: Numpy array of predicted outputs. Dimension (p,)
+    yhat: Numpy array of predicted outputs. Dimension (N,)
     '''
     # Put in 2-dimensional array
     if X.ndim == 1:
@@ -85,17 +84,17 @@ def train_linear_model(Xtrain, ytrain):
 
     Inputs
     ------
-    Xtrain: Numpy array inputs (without bias column). Dimension (p, N)
-    ytrain: Numpy array outputs. Dimension (p, )
+    Xtrain: Numpy array inputs (without bias column). Dimension (N, p)
+    ytrain: Numpy array outputs. Dimension (N, )
 
     Outputs
     -------
-    beta: Numpy array of trained coefficients. Dimension (N+1, )
+    beta: Numpy array of trained coefficients. Dimension (p+1, )
     '''
     # Add bias column
     Xtrain = add_bias(Xtrain)
 
-    beta = linalg.inv(Xtrain.T @ Xtrain) @ Xtrain.T @ ytrain
+    beta = np.linalg.inv(Xtrain.T @ Xtrain) @ Xtrain.T @ ytrain
 
     return beta
 

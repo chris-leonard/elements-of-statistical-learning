@@ -66,7 +66,7 @@ def run_sim(reg_fun, eff_df, alpha, sample_range, N=100, sigma=1):
     quant_curves = [fhat_quantiles(x, alpha, f, sigma, basis_fun, smoother_matrix, basis_matrix_inv) for x in x_val]
     lower_quant_curve = [pair[0] for pair in quant_curves]
     upper_quant_curve = [pair[1] for pair in quant_curves]
-    print('Plotting {}% confidence interval:'.format(round(100*(1-alpha), 1)))
+    print('Plotting {}% quantiles:'.format(round(100*(1-alpha), 1)))
 
     # Set plot parameters
     fig, ax = plt.subplots(figsize=(15, 10))

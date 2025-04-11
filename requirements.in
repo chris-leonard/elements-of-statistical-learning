@@ -4,6 +4,7 @@ pandas
 matplotlib
 scipy
 sklearn
+seaborn
 
 # Linting
 flake8

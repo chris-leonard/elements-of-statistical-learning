@@ -1,0 +1,9 @@
+# General
+
+Do not directly read data files such as csv or jsonl, as they may be too big and kill you.
+
+Continually refactor the code to simplify it.
+
+Use the virtual environment venv.
+
+Make the code concise. in general don't use try/except unless the except block can actually fix the error.

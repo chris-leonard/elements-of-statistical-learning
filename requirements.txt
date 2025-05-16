@@ -4,6 +4,7 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
+./basis-expansions
 appdirs==1.4.4            # via pyppeteer
 appnope==0.1.0            # via ipykernel, ipython
 attrs==19.3.0             # via jsonschema

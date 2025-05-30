@@ -1,11 +1,15 @@
 # pydata
+csaps # smoothing splines
 jupyter
-pandas
 matplotlib
+pandas
+patsy # splines
 scipy
 sklearn
+seaborn
 
 # Linting
+black
 flake8
 
 # To download jupyter notebooks as pdf

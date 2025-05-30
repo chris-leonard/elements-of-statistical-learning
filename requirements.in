@@ -1,4 +1,5 @@
 # pydata
+csaps # smoothing splines
 jupyter
 matplotlib
 pandas

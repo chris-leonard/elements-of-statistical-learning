@@ -49,7 +49,6 @@ class HeartDiseaseModel:
     def predict_proba(self, new_data):
         """Predict probability of heart disease."""
         self._check_is_fitted()
-
         X_new = build_design_matrices([self.X.design_info], new_data)[0]
         return self.model.predict_proba(X_new)[:, 1]
     
